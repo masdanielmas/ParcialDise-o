@@ -77,6 +77,25 @@
       margin-bottom: 1.5rem;
       color: #003366;
     }
+    .boton-centro {
+  text-align: center; /* centra horizontal */
+  margin-top: 20px;
+}
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #003366;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #0055aa;
+    }
+
+
 
     .login-container label {
       display: block;
@@ -171,7 +190,9 @@
       <label for="password">Contraseña:</label>
       <input type="password" id="password" placeholder="********" required>
 
-      <button type="submit">Entrar</button>
+      <div class="boton-centro">
+      <a href="Dashboard.html" class="btn">Entrar</a>
+      </div>
     </form>
 
     <div class="extra-links">
