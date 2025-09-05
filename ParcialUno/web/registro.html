@@ -56,7 +56,11 @@
       background: #f2b705;
       color: #003366;
       transition: background 0.3s;
+
     }
+     .btn-login {
+      text-align: center; /* centra horizontal */
+      margin-top: 20px;}
 
     .btn-login:hover {
       background: #ffd84d;
@@ -156,7 +160,7 @@
         <li><a href="index.html">Inicio</a></li>
         <li><a href="#">Funciones</a></li>
         <li><a href="registro.html">Registro</a></li>
-        <li><a href="login.html" class="btn-login">Iniciar sesión</a></li>
+        <li><a href="InicioSesion.html" class="btn-login">Iniciar sesión</a></li>
       </ul>
     </nav>
   </header>
@@ -177,7 +181,9 @@
       <label for="confirm-password">Confirmar contraseña:</label>
       <input type="password" id="confirm-password" placeholder="********" required>
 
-      <button type="submit">Registrarme</button>
+      <div class="btn-login">
+      <a href="InicioSesion.html" class="btn">Registrarme</a>
+      </div>
     </form>
 
     <div class="extra-links">
