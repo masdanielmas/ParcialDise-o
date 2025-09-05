@@ -514,6 +514,28 @@ footer a:hover {
   transform: translateY(-5px);
   background: #f1f5ff;
 }
+.card {
+  display: block;
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit; /* Mantiene el color del texto */
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Esto quita subrayado en TODOS los links dentro de las cards */
+.card h4, 
+.card p {
+  text-decoration: none !important;
+}
 
 
 
