@@ -8,10 +8,19 @@
 </head>
 <body>
   <header>
-    <img src="logo-web.png" alt="Logo" />
+     <div class="user-info">
+  <img src="Usuario-pg.png" alt="Usuario">
+  <div>
+    <h4>Daniel Mamela</h4>
+    <p>daniela.masmelag@konradlorenz.edu.co</p>
+  </div>
+</div>
+<div class="logo-container">
+  <img src="logo-web.png" alt="Logo" />
+</div>
     <nav>
       <ul>
-        <li><a href="Dashboard.html">Dashboard</a></li>
+        <li><a href="Dashboard.html">Inicio</a></li>
         <li><a href="InicioSesion.html" class="btn-logout">Cerrar sesión</a></li>
       </ul>
     </nav>
@@ -31,20 +40,48 @@
 
     <main class="main-content">
       <h2>📊 Progreso</h2>
-      <p>Monitorea el avance de tus actividades.</p>
+      <p>Monitorea el avance de tus tareas y exámenes de forma visual.</p>
 
-      <section class="cards">
-        <div class="card">
-          <h3>Tareas completadas</h3>
-          <p>✅ 9 de 12 tareas completadas (75%).</p>
+      <section class="progress-container">
+        <!-- Tareas -->
+        <div class="progress-card">
+          <div class="progress-title">📘 Tareas</div>
+          <div class="progress-bar">
+            <div class="progress-fill tasks" style="width: 75%;"></div>
+          </div>
+          <div class="progress-info">✅ 9 de 12 tareas completadas (75%)</div>
+          <ul class="task-list">
+            <li class="task-completed">✔ Matemáticas – Guía de ecuaciones diferenciales</li>
+            <li class="task-completed">✔ Historia – Ensayo Revolución Francesa</li>
+            <li class="task-pending">⏳ Inglés – Presentación Future Tenses</li>
+            <li class="task-pending">⏳ Biología – Informe fotosíntesis</li>
+            <li class="task-completed">✔ Literatura – Resumen Don Quijote</li>
+            <li class="task-completed">✔ Física – Ejercicios cinemática</li>
+            <li class="task-pending">⏳ Tecnología – Proyecto Arduino</li>
+          </ul>
         </div>
-        <div class="card">
-          <h3>Exámenes aprobados</h3>
-          <p>✅ 2 de 3 exámenes aprobados.</p>
+
+        <!-- Exámenes -->
+        <div class="progress-card">
+          <div class="progress-title">📝 Exámenes</div>
+          <div class="progress-bar">
+            <div class="progress-fill exams" style="width: 67%;"></div>
+          </div>
+          <div class="progress-info">✅ 2 de 3 exámenes aprobados (67%)</div>
+          <ul class="exam-list">
+            <li class="exam-passed">✔ Matemáticas – Álgebra lineal</li>
+            <li class="exam-passed">✔ Historia – Edad Media</li>
+            <li class="exam-failed">❌ Química – Reacciones orgánicas</li>
+          </ul>
         </div>
-        <div class="card">
-          <h3>Clases asistidas</h3>
-          <p>✅ 90% de asistencia.</p>
+
+        <!-- Asistencia -->
+        <div class="progress-card">
+          <div class="progress-title">🎓 Asistencia</div>
+          <div class="progress-bar">
+            <div class="progress-fill attendance" style="width: 90%;"></div>
+          </div>
+          <div class="progress-info">✅ 90% de asistencia</div>
         </div>
       </section>
     </main>
@@ -53,5 +90,15 @@
   <footer>
     <p>Organizador de Tareas Estudiantiles © 2025</p>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".progress-fill").forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = "0";
+        setTimeout(() => { bar.style.width = width; }, 100);
+      });
+    });
+  </script>
 </body>
 </html>

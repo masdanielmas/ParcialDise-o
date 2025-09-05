@@ -4,14 +4,25 @@
   <meta charset="UTF-8"/>
   <title>Dashboard</title>
   <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <img src="logo-web.png" alt="Logo" />
+    <div class="user-info">
+  <img src="Usuario-pg.png" alt="Usuario">
+  <div>
+    <h4>Daniel Mamela</h4>
+    <p>daniela.masmelag@konradlorenz.edu.co</p>
+  </div>
+</div>
+<div class="logo-container">
+  <img src="logo-web.png" alt="Logo" />
+</div>
+
+
     <nav>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="InicioSesion.html" class="btn-logout">Cerrar sesión</a></li>
+        <li><a href="index.html" class="btn-logout">Cerrar sesión</a></li>
       </ul>
     </nav>
   </header>
@@ -29,8 +40,16 @@
     </aside>
 
     <main class="main-content">
-      <h2>Bienvenido, estudiante 👋</h2>
-      <p>Aquí puedes organizar tus actividades y tener todo bajo control.</p>
+      <div class="welcome-card">
+        <h2>Bienvenido, estudiante 👋</h2>
+        <p>Aquí puedes organizar tus actividades y tener todo bajo control.</p>
+      </div>
+      <div class="cards">
+        <div class="card">📘 <h4>Tareas Pendientes</h4><p>3 tareas por entregar</p></div>
+        <div class="card">📝 <h4>Próximo Examen</h4><p>Matemáticas - Lunes</p></div>
+        <div class="card">📅 <h4>Calendario</h4><p>Revisión semanal</p></div>
+        <div class="card">📊 <h4>Progreso</h4><p>75% completado</p></div>
+      </div>
     </main>
   </section>
 

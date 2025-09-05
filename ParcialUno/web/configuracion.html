@@ -5,11 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Configuración</title>
   <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="configuracion.css"/> <!-- CSS dedicado -->
 </head>
 <body>
   <!-- ===== Header ===== -->
   <header>
-    <img src="logo-web.png" alt="Logo" />
+     <div class="user-info">
+  <img src="Usuario-pg.png" alt="Usuario">
+  <div>
+    <h4>Daniel Mamela</h4>
+    <p>daniela.masmelag@konradlorenz.edu.co</p>
+  </div>
+</div>
+<div class="logo-container">
+  <img src="logo-web.png" alt="Logo" />
+</div>
     <nav>
       <ul>
         <li><a href="Dashboard.html">Dashboard</a></li>
@@ -35,28 +45,58 @@
     <!-- Main -->
     <main class="main-content">
       <h2>⚙ Configuración</h2>
-      <p>Aquí podrás cambiar tus preferencias de usuario.</p>
+      <p>Personaliza tu experiencia en la aplicación.</p>
+
+      <!-- Tarjeta de usuario -->
+      <div class="user-card">
+        <img src="Usuario-pg.png" alt="Usuario">
+        <div>
+          <h3>Daniel Mamela</h3>
+          <p>daniela.masmelag@konradlorenz.edu.co</p>
+          <button class="edit-profile-btn">Editar perfil</button>
+        </div>
+      </div>
 
       <!-- Opciones de configuración -->
-      <section class="cards">
-        <div class="card">
-          <h3>Perfil</h3>
-          <p>Actualiza tu información personal y cambia tu contraseña.</p>
+      <section class="config-grid">
+        <div class="config-card">
+          <h3>👤 Perfil</h3>
+          <p>Actualiza tu información personal, nombre y contraseña.</p>
         </div>
 
-        <div class="card">
-          <h3>Notificaciones</h3>
-          <p>Elige qué recordatorios deseas recibir y cómo.</p>
+        <div class="config-card">
+          <h3>🔔 Notificaciones</h3>
+          <p>Configura recordatorios por correo y notificaciones push.</p>
         </div>
 
-        <div class="card">
-          <h3>Apariencia</h3>
-          <p>Configura el tema claro/oscuro y el tamaño de letra.</p>
+        <div class="config-card">
+          <h3>🎨 Apariencia</h3>
+          <p>Elige entre modo claro/oscuro y tamaño de texto.</p>
         </div>
 
-        <div class="card">
-          <h3>Idioma</h3>
-          <p>Selecciona el idioma en el que prefieres usar la aplicación.</p>
+        <div class="config-card">
+          <h3>🌐 Idioma</h3>
+          <p>Selecciona el idioma de la aplicación.</p>
+        </div>
+
+        <div class="config-card">
+          <h3>🔒 Seguridad</h3>
+          <p>Configura autenticación en dos pasos y seguridad extra.</p>
+        </div>
+
+        <div class="config-card">
+          <h3>🛠 Accesibilidad</h3>
+          <p>Personaliza accesibilidad: texto grande, alto contraste, etc.</p>
+        </div>
+
+        <div class="config-card">
+          <h3>🔄 Sincronización</h3>
+          <p>Sincroniza datos con otros dispositivos y apps.</p>
+        </div>
+
+        <div class="config-card">
+          <h3>💬 Soporte</h3>
+          <p>Contacta soporte técnico o revisa preguntas frecuentes.</p>
         </div>
       </section>
     </main>

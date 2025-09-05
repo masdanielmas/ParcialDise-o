@@ -5,13 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mis Tareas</title>
   <link rel="stylesheet" href="styles.css"/>
+  <style>
+    /* Solo lo necesario, mantiene estilo anterior */
+    .task-list { display: flex; flex-wrap: wrap; gap: 15px; }
+    .task-card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      transition: transform 0.2s;
+    }
+    .task-card:hover { transform: scale(1.03); }
+    .task-actions {
+      display: flex; justify-content: space-between; margin-top: 10px;
+    }
+    .btn { padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer; }
+    .btn-add { background: #2563eb; color: white; margin-bottom: 20px; }
+    .btn-edit { background: #facc15; }
+    .btn-delete { background: #ef4444; color: white; }
+    .task-title { font-weight: bold; margin-bottom: 5px; }
+    .task-date { font-size: 0.9rem; color: #555; }
+  </style>
 </head>
 <body>
   <header>
-    <img src="logo-web.png" alt="Logo" />
+     <div class="user-info">
+  <img src="Usuario-pg.png" alt="Usuario">
+  <div>
+    <h4>Daniel Mamela</h4>
+    <p>daniela.masmelag@konradlorenz.edu.co</p>
+  </div>
+</div>
+<div class="logo-container">
+  <img src="logo-web.png" alt="Logo" />
+</div>
     <nav>
       <ul>
-        <li><a href="Dashboard.html">Dashboard</a></li>
+        <li><a href="Dashboard.html">Inicio</a></li>
         <li><a href="InicioSesion.html" class="btn-logout">Cerrar sesión</a></li>
       </ul>
     </nav>
@@ -31,20 +62,81 @@
 
     <main class="main-content">
       <h2>📘 Mis Tareas</h2>
-      <p>Aquí encontrarás la lista de tus tareas pendientes y completadas.</p>
+      <p>Administra tus tareas: agrega, edita o elimina fácilmente.</p>
+      <button class="btn btn-add">➕ Nueva Tarea</button>
 
-      <section class="cards">
-        <div class="card">
-          <h3>Matemáticas</h3>
-          <p>Resolver guía de ecuaciones diferenciales – <strong>Entrega: 8 de septiembre</strong></p>
+      <section class="task-list">
+        <div class="task-card">
+          <div class="task-title">Matemáticas</div>
+          <p>Resolver guía de ecuaciones diferenciales</p>
+          <p class="task-date"><strong>Entrega:</strong> 8 de septiembre</p>
+          <div class="task-actions">
+            <button class="btn btn-edit">✏</button>
+            <button class="btn btn-delete">🗑</button>
+          </div>
         </div>
-        <div class="card">
-          <h3>Historia</h3>
-          <p>Ensayo sobre la Revolución Francesa – <strong>Entrega: 12 de septiembre</strong></p>
+        <div class="task-card">
+          <div class="task-title">Historia</div>
+          <p>Ensayo sobre la Revolución Francesa</p>
+          <p class="task-date"><strong>Entrega:</strong> 12 de septiembre</p>
+          <div class="task-actions">
+            <button class="btn btn-edit">✏</button>
+            <button class="btn btn-delete">🗑</button>
+          </div>
         </div>
-        <div class="card">
-          <h3>Inglés</h3>
-          <p>Presentación oral sobre “Future Tenses” – <strong>Entrega: 15 de septiembre</strong></p>
+        <div class="task-card">
+          <div class="task-title">Inglés</div>
+          <p>Presentación oral sobre Future Tenses</p>
+          <p class="task-date"><strong>Entrega:</strong> 15 de septiembre</p>
+          <div class="task-actions">
+            <button class="btn btn-edit">✏</button>
+            <button class="btn btn-delete">🗑</button>
+          </div>
+        </div>
+        <div class="task-card">
+          <div class="task-title">Química</div>
+          <p>Informe de laboratorio: reacciones químicas</p>
+          <p class="task-date"><strong>Entrega:</strong> 17 de septiembre</p>
+          <div class="task-actions">
+            <button class="btn btn-edit">✏</button>
+            <button class="btn btn-delete">🗑</button>
+          </div>
+        </div>
+        <div class="task-card">
+          <div class="task-title">Física</div>
+          <p>Problemas sobre movimiento parabólico</p>
+          <p class="task-date"><strong>Entrega:</strong> 19 de septiembre</p>
+          <div class="task-actions">
+            <button class="btn btn-edit">✏</button>
+            <button class="btn btn-delete">🗑</button>
+          </div>
+        </div>
+        <div class="task-card">
+          <div class="task-title">Programación</div>
+          <p>Proyecto: aplicación de lista de tareas</p>
+          <p class="task-date"><strong>Entrega:</strong> 20 de septiembre</p>
+          <div class="task-actions">
+            <button class="btn btn-edit">✏</button>
+            <button class="btn btn-delete">🗑</button>
+          </div>
+        </div>
+        <div class="task-card">
+          <div class="task-title">Arte</div>
+          <p>Collage con temática Modernismo</p>
+          <p class="task-date"><strong>Entrega:</strong> 22 de septiembre</p>
+          <div class="task-actions">
+            <button class="btn btn-edit">✏</button>
+            <button class="btn btn-delete">🗑</button>
+          </div>
+        </div>
+        <div class="task-card">
+          <div class="task-title">Música</div>
+          <p>Práctica de escalas y acordes</p>
+          <p class="task-date"><strong>Entrega:</strong> 25 de septiembre</p>
+          <div class="task-actions">
+            <button class="btn btn-edit">✏</button>
+            <button class="btn btn-delete">🗑</button>
+          </div>
         </div>
       </section>
     </main>

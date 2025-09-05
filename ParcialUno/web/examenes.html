@@ -3,12 +3,22 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css"/>
   <title>Exámenes</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <header>
-    <img src="logo-web.png" alt="Logo" />
+     <div class="user-info">
+  <img src="Usuario-pg.png" alt="Usuario">
+  <div>
+    <h4>Daniel Mamela</h4>
+    <p>daniela.masmelag@konradlorenz.edu.co</p>
+  </div>
+</div>
+<div class="logo-container">
+  <img src="logo-web.png" alt="Logo" />
+</div>
     <nav>
       <ul>
         <li><a href="Dashboard.html">Dashboard</a></li>
@@ -32,19 +42,33 @@
     <main class="main-content">
       <h2>📝 Exámenes</h2>
       <p>Lista de próximos exámenes programados.</p>
+      <button class="btn-add">➕ Agregar Examen</button>
 
       <section class="cards">
         <div class="card">
           <h3>Matemáticas</h3>
-          <p>📅 10 de septiembre – Álgebra lineal</p>
+          <p>📅 10 de septiembre – Álgebra Lineal</p>
+          <span class="tag hard">Difícil</span>
         </div>
         <div class="card">
           <h3>Historia</h3>
           <p>📅 15 de septiembre – Edad Media</p>
+          <span class="tag medium">Medio</span>
         </div>
         <div class="card">
           <h3>Química</h3>
-          <p>📅 20 de septiembre – Reacciones orgánicas</p>
+          <p>📅 20 de septiembre – Reacciones Orgánicas</p>
+          <span class="tag hard">Difícil</span>
+        </div>
+        <div class="card">
+          <h3>Inglés</h3>
+          <p>📅 25 de septiembre – Verbos Irregulares</p>
+          <span class="tag easy">Fácil</span>
+        </div>
+        <div class="card">
+          <h3>Programación</h3>
+          <p>📅 28 de septiembre – JavaScript Avanzado</p>
+          <span class="tag hard">Difícil</span>
         </div>
       </section>
     </main>
@@ -55,3 +79,4 @@
   </footer>
 </body>
 </html>
+

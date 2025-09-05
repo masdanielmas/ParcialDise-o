@@ -8,7 +8,16 @@
 </head>
 <body>
   <header>
-    <img src="logo-web.png" alt="Logo" />
+     <div class="user-info">
+  <img src="Usuario-pg.png" alt="Usuario">
+  <div>
+    <h4>Daniel Mamela</h4>
+    <p>daniela.masmelag@konradlorenz.edu.co</p>
+  </div>
+</div>
+<div class="logo-container">
+  <img src="logo-web.png" alt="Logo" />
+</div>
     <nav>
       <ul>
         <li><a href="Dashboard.html">Dashboard</a></li>
@@ -31,22 +40,81 @@
 
     <main class="main-content">
       <h2>📅 Calendario</h2>
-      <p>Consulta tus clases, reuniones y actividades importantes.</p>
+      <p>Consulta tus tareas y exámenes programados este mes.</p>
 
-      <section class="cards">
-        <div class="card">
-          <h3>Lunes</h3>
-          <p>Clases: Matemáticas y Literatura</p>
+      <div class="calendar-container">
+        <div class="calendar-header">
+          <button class="calendar-nav">&lt;</button>
+          <h3>Septiembre 2025</h3>
+          <button class="calendar-nav">&gt;</button>
         </div>
-        <div class="card">
-          <h3>Martes</h3>
-          <p>Reunión de grupo – Proyecto de Ciencias</p>
+
+        <div class="calendar">
+          <!-- Encabezado de días -->
+          <div class="day-header">Lun</div>
+          <div class="day-header">Mar</div>
+          <div class="day-header">Mié</div>
+          <div class="day-header">Jue</div>
+          <div class="day-header">Vie</div>
+          <div class="day-header">Sáb</div>
+          <div class="day-header">Dom</div>
+
+          <!-- Espacios para alinear inicio de mes -->
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+
+          <!-- Semana 1 -->
+          <div class="day"><span class="date-number">1</span></div>
+          <div class="day"><span class="date-number">2</span></div>
+          <div class="day"><span class="date-number">3</span></div>
+          <div class="day"><span class="date-number">4</span></div>
+          <div class="day"><span class="date-number">5</span></div>
+          <div class="day"><span class="date-number">6</span></div>
+          <div class="day"><span class="date-number">7</span></div>
+
+          <!-- Semana 2 -->
+          <div class="day"><span class="date-number">8</span>
+            <span class="task-label">Tarea: Ecuaciones (Matemáticas)</span>
+          </div>
+          <div class="day"><span class="date-number">9</span></div>
+          <div class="day"><span class="date-number">10</span>
+            <span class="exam-label">Examen: Álgebra (Matemáticas)</span>
+          </div>
+          <div class="day"><span class="date-number">11</span></div>
+          <div class="day"><span class="date-number">12</span>
+            <span class="task-label">Tarea: Ensayo Revolución Francesa</span>
+          </div>
+          <div class="day"><span class="date-number">13</span></div>
+          <div class="day"><span class="date-number">14</span></div>
+
+          <!-- Semana 3 -->
+          <div class="day"><span class="date-number">15</span>
+            <span class="task-label">Tarea: Presentación Inglés</span>
+            <span class="exam-label">Examen: Historia</span>
+          </div>
+          <div class="day"><span class="date-number">16</span></div>
+          <div class="day"><span class="date-number">17</span></div>
+          <div class="day"><span class="date-number">18</span></div>
+          <div class="day"><span class="date-number">19</span></div>
+          <div class="day"><span class="date-number">20</span>
+            <span class="exam-label">Examen: Química</span>
+          </div>
+          <div class="day"><span class="date-number">21</span></div>
+
+          <!-- Semana 4 -->
+          <div class="day"><span class="date-number">22</span></div>
+          <div class="day"><span class="date-number">23</span></div>
+          <div class="day"><span class="date-number">24</span></div>
+          <div class="day"><span class="date-number">25</span></div>
+          <div class="day"><span class="date-number">26</span></div>
+          <div class="day"><span class="date-number">27</span></div>
+          <div class="day"><span class="date-number">28</span></div>
+
+          <!-- Semana 5 -->
+          <div class="day"><span class="date-number">29</span></div>
+          <div class="day"><span class="date-number">30</span></div>
         </div>
-        <div class="card">
-          <h3>Miércoles</h3>
-          <p>Clases: Historia y Química</p>
-        </div>
-      </section>
+      </div>
     </main>
   </section>
 
