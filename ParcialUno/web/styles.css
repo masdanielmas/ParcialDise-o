@@ -537,6 +537,56 @@ footer a:hover {
   text-decoration: none !important;
 }
 
+/* ===== SEARCH BAR ===== */
+.search-bar {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+}
+
+/* ===== PROGRESS BARS ===== */
+.progress-section {
+  margin-top: 30px;
+}
+
+.progress-bar {
+  margin-bottom: 20px;
+}
+
+.progress-bar p {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.progress-bar .bar {
+  background: #ddd; /* Fondo gris visible */
+  border-radius: 20px;
+  height: 20px; /* Más alto para que se note */
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar .bar .fill {
+  display: block;
+  height: 100%; /* Asegura que se llene toda la altura */
+  background: linear-gradient(90deg, #6c63ff, #00c6ff); /* Degradado visible */
+  border-radius: 20px;
+}
 
 
 /* ===== Responsive ===== */
