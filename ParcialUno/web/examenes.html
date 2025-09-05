@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8"/>
-  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exámenes</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
@@ -10,7 +11,7 @@
     <img src="logo-web.png" alt="Logo" />
     <nav>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Dashboard.html">Dashboard</a></li>
         <li><a href="InicioSesion.html" class="btn-logout">Cerrar sesión</a></li>
       </ul>
     </nav>
@@ -21,7 +22,7 @@
       <h3>Menú</h3>
       <ul>
         <li><a href="tareas.html">📘 Mis Tareas</a></li>
-        <li><a href="examenes.html">📝 Exámenes</a></li>
+        <li><a href="examenes.html" class="active">📝 Exámenes</a></li>
         <li><a href="calendario.html">📅 Calendario</a></li>
         <li><a href="progreso.html">📊 Progreso</a></li>
         <li><a href="configuracion.html">⚙ Configuración</a></li>
@@ -29,8 +30,23 @@
     </aside>
 
     <main class="main-content">
-      <h2>Bienvenido, estudiante 👋</h2>
-      <p>Aquí puedes organizar tus actividades y tener todo bajo control.</p>
+      <h2>📝 Exámenes</h2>
+      <p>Lista de próximos exámenes programados.</p>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Matemáticas</h3>
+          <p>📅 10 de septiembre – Álgebra lineal</p>
+        </div>
+        <div class="card">
+          <h3>Historia</h3>
+          <p>📅 15 de septiembre – Edad Media</p>
+        </div>
+        <div class="card">
+          <h3>Química</h3>
+          <p>📅 20 de septiembre – Reacciones orgánicas</p>
+        </div>
+      </section>
     </main>
   </section>
 

@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8"/>
-  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Progreso</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
@@ -10,7 +11,7 @@
     <img src="logo-web.png" alt="Logo" />
     <nav>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Dashboard.html">Dashboard</a></li>
         <li><a href="InicioSesion.html" class="btn-logout">Cerrar sesión</a></li>
       </ul>
     </nav>
@@ -23,14 +24,29 @@
         <li><a href="tareas.html">📘 Mis Tareas</a></li>
         <li><a href="examenes.html">📝 Exámenes</a></li>
         <li><a href="calendario.html">📅 Calendario</a></li>
-        <li><a href="progreso.html">📊 Progreso</a></li>
+        <li><a href="progreso.html" class="active">📊 Progreso</a></li>
         <li><a href="configuracion.html">⚙ Configuración</a></li>
       </ul>
     </aside>
 
     <main class="main-content">
-      <h2>Bienvenido, estudiante 👋</h2>
-      <p>Aquí puedes organizar tus actividades y tener todo bajo control.</p>
+      <h2>📊 Progreso</h2>
+      <p>Monitorea el avance de tus actividades.</p>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Tareas completadas</h3>
+          <p>✅ 9 de 12 tareas completadas (75%).</p>
+        </div>
+        <div class="card">
+          <h3>Exámenes aprobados</h3>
+          <p>✅ 2 de 3 exámenes aprobados.</p>
+        </div>
+        <div class="card">
+          <h3>Clases asistidas</h3>
+          <p>✅ 90% de asistencia.</p>
+        </div>
+      </section>
     </main>
   </section>
 
