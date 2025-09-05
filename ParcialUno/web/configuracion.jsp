@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE jsp>
 <html lang="es">
 <head>
   <meta charset="UTF-8"/>
@@ -21,8 +21,8 @@
 </div>
     <nav>
       <ul>
-        <li><a href="Dashboard.html">Inicio</a></li>
-        <li><a href="index.html" class="btn-logout">Cerrar sesión</a></li>
+        <li><a href="Dashboard.jsp">Inicio</a></li>
+        <li><a href="index.jsp" class="btn-logout">Cerrar sesión</a></li>
       </ul>
     </nav>
   </header>
@@ -33,11 +33,11 @@
     <aside class="sidebar">
       <h3>Menú</h3>
       <ul>
-        <li><a href="tareas.html">📘 Mis Tareas</a></li>
-        <li><a href="examenes.html">📝 Exámenes</a></li>
-        <li><a href="calendario.html">📅 Calendario</a></li>
-        <li><a href="progreso.html">📊 Progreso</a></li>
-        <li><a href="configuracion.html" class="active">⚙ Configuración</a></li>
+        <li><a href="tareas.jsp">📘 Mis Tareas</a></li>
+        <li><a href="examenes.jsp">📝 Exámenes</a></li>
+        <li><a href="calendario.jsp">📅 Calendario</a></li>
+        <li><a href="progreso.jsp">📊 Progreso</a></li>
+        <li><a href="configuracion.jsp" class="active">⚙ Configuración</a></li>
       </ul>
     </aside>
 

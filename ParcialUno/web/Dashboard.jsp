@@ -12,7 +12,7 @@
     <div class="user-info">
       <img src="Usuario-pg.png" alt="Usuario">
       <div>
-        <h4>Daniel Mamela</h4>
+        <h4>Daniel Masmela</h4>
         <p>daniela.masmelag@konradlorenz.edu.co</p>
       </div>
     </div>
@@ -21,7 +21,7 @@
     </div>
     <nav>
       <ul>
-        <li><a href="index.html" class="btn-logout">Cerrar sesión</a></li>
+        <li><a href="index.jsp" class="btn-logout">Cerrar sesión</a></li>
       </ul>
     </nav>
   </header>
@@ -32,11 +32,11 @@
     <aside class="sidebar">
       <h3>Menú</h3>
       <ul>
-        <li><a href="tareas.html">📘 Mis Tareas</a></li>
-        <li><a href="examenes.html">📝 Exámenes</a></li>
-        <li><a href="calendario.html">📅 Calendario</a></li>
-        <li><a href="progreso.html">📊 Progreso</a></li>
-        <li><a href="configuracion.html">⚙ Configuración</a></li>
+        <li><a href="tareas.jsp">📘 Mis Tareas</a></li>
+        <li><a href="examenes.jsp">📝 Exámenes</a></li>
+        <li><a href="calendario.jsp">📅 Calendario</a></li>
+        <li><a href="progreso.jsp">📊 Progreso</a></li>
+        <li><a href="configuracion.jsp">⚙ Configuración</a></li>
       </ul>
     </aside>
 
@@ -55,23 +55,23 @@
 
       <!-- Tarjetas resumen -->
       <div class="cards">
-        <a href="tareas.html" class="card">
+        <a href="tareas.jsp" class="card">
           📘 <h4>Tareas Pendientes</h4>
           <p>3 tareas por entregar</p>
         </a>
-        <a href="examenes.html" class="card">
+        <a href="examenes.jsp" class="card">
           📝 <h4>Próximo Examen</h4>
           <p>Matemáticas - Lunes</p>
         </a>
-        <a href="calendario.html" class="card">
+        <a href="calendario.jsp" class="card">
           📅 <h4>Calendario</h4>
           <p>Revisión semanal</p>
         </a>
-        <a href="progreso.html" class="card">
+        <a href="progreso.jsp" class="card">
           📊 <h4>Progreso</h4>
           <p>75% completado</p>
         </a>
-        <a href="configuracion.html" class="card">
+        <a href="configuracion.jsp" class="card">
           ⚙️ <h4>Configuración</h4>
           <p>Personaliza tu perfil</p>
         </a>

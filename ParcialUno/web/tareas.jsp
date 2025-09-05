@@ -5,28 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mis Tareas</title>
   <link rel="stylesheet" href="styles.css"/>
-  <style>
-    /* Solo lo necesario, mantiene estilo anterior */
-    .task-list { display: flex; flex-wrap: wrap; gap: 15px; }
-    .task-card {
-      background: #fff;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      width: 250px;
-      transition: transform 0.2s;
-    }
-    .task-card:hover { transform: scale(1.03); }
-    .task-actions {
-      display: flex; justify-content: space-between; margin-top: 10px;
-    }
-    .btn { padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer; }
-    .btn-add { background: #2563eb; color: white; margin-bottom: 20px; }
-    .btn-edit { background: #facc15; }
-    .btn-delete { background: #ef4444; color: white; }
-    .task-title { font-weight: bold; margin-bottom: 5px; }
-    .task-date { font-size: 0.9rem; color: #555; }
-  </style>
 </head>
 <body>
   <header>
@@ -42,8 +20,8 @@
 </div>
     <nav>
       <ul>
-        <li><a href="Dashboard.html">Inicio</a></li>
-        <li><a href="index.html" class="btn-logout">Cerrar sesión</a></li>
+        <li><a href="Dashboard.jsp">Inicio</a></li>
+        <li><a href="index.jsp" class="btn-logout">Cerrar sesión</a></li>
       </ul>
     </nav>
   </header>
@@ -52,11 +30,11 @@
     <aside class="sidebar">
       <h3>Menú</h3>
       <ul>
-        <li><a href="tareas.html" class="active">📘 Mis Tareas</a></li>
-        <li><a href="examenes.html">📝 Exámenes</a></li>
-        <li><a href="calendario.html">📅 Calendario</a></li>
-        <li><a href="progreso.html">📊 Progreso</a></li>
-        <li><a href="configuracion.html">⚙ Configuración</a></li>
+        <li><a href="tareas.jsp" class="active">📘 Mis Tareas</a></li>
+        <li><a href="examenes.jsp">📝 Exámenes</a></li>
+        <li><a href="calendario.jsp">📅 Calendario</a></li>
+        <li><a href="progreso.jsp">📊 Progreso</a></li>
+        <li><a href="configuracion.jsp">⚙ Configuración</a></li>
       </ul>
     </aside>
 
